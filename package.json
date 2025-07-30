@@ -1,0 +1,30 @@
+{
+  "name": "nodes",
+  "version": "1.0.0",
+  "description": "node project for deploy and github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "nodemon1": "nodemon src/index.js",
+    "build": "node esbuild.build.mjs",
+    "dev:bundle": "node esbuild.dev.mjs",
+    "dev": "nodemon --config nodemon.json"
+  },
+  "keywords": [
+    "deploy",
+    "prod",
+    "and",
+    "uat"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.8",
+    "nodemon": "^3.1.10"
+  }
+}
